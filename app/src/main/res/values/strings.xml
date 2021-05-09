@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">APA_Projet</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="loginhere">Log in here</string>
+    <string name="register">Register</string>
+    <string name="registerhere">Register here</string>
+    <string name="age">Age</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="createActivity">Create an activity</string>
+    <string name="activityTitle">Title</string>
+    <string name="activityDuration">Duration</string>
+    <string name="activityDescription">Description</string>
+    <string name="create">Create</string>
+
+    <string-array name="duration_array">
+        <item>30 mins</item>
+        <item>1 hr </item>
+        <item>1 hr 30 mins</item>
+        <item>2 hrs</item>
+        <item>2 hrs 30 mins</item>
+        <item>3 hrs</item>
+    </string-array>
+</resources>

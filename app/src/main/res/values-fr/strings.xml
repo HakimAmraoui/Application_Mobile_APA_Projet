@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">APA_Projet</string>
+    <string name="login">Connection</string>
+    <string name="username">Identifiant</string>
+    <string name="password">Mot de passe</string>
+    <string name="loginhere">Se connecter ici</string>
+    <string name="register">Inscription</string>
+    <string name="registerhere">S\'inscrire ici</string>
+    <string name="age">Age</string>
+    <string name="male">Homme</string>
+    <string name="female">Femme</string>
+    <string name="createActivity">Créer une activitée</string>
+    <string name="activityTitle">Titre</string>
+    <string name="activityDuration">Durée</string>
+</resources>
