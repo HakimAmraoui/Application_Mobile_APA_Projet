@@ -108,6 +108,7 @@
         android:layout_below="@id/buttonLogin"
         android:fontFamily="@font/poppinsmedium"
         android:text="@string/registerhere"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp"/>
 
 </RelativeLayout>

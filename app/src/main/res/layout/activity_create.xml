@@ -65,7 +65,8 @@
         android:layout_centerHorizontal="true"
         android:text="@string/create"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15dp"/>
 
 
 
