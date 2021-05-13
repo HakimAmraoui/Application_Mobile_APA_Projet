@@ -9,9 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.APA_Projet">
-        <activity android:name=".CreateActivity"></activity>
-        <activity android:name=".Register" />
-        <activity android:name=".Login" />
+        <activity android:name=".fragments.FragmentLogin" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

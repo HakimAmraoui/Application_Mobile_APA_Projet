@@ -6,17 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <FrameLayout
-        android:id="@+id/fragment_container"
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/bottom_navigation"/>
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        app:menu="@menu/bottom_navigation_bar"/>
+    <androidx.viewpager.widget.PagerTabStrip
+        android:id="@+id/pager_header"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="bottom"
+        android:background="@color/design_default_color_primary"
+        android:textAppearance="@style/PagerTabStripText"
+        android:paddingBottom="14dp" />
 
+    </androidx.viewpager.widget.ViewPager>
 </RelativeLayout>
