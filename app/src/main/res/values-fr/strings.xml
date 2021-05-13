@@ -13,4 +13,14 @@
     <string name="createActivity">Créer une activitée</string>
     <string name="activityTitle">Titre</string>
     <string name="activityDuration">Durée</string>
+    <string name="create">Créer</string>
+    <string name="home">Accueil</string>
+    <string name="calendar">Calendrier</string>
+    <string name="search">Rechercher</string>
+    <string name="add_structure">Ajouter une structure</string>
+    <string name="add_session">Ajouter une session</string>
+    <string name="add_activity">Ajouter une activité</string>
+    <string name="patient">Patient</string>
+    <string name="doctor">Docteur</string>
+    <string name="collaborator">Collaborateur</string>
 </resources>

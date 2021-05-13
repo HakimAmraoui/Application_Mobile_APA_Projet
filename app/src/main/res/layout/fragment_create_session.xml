@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.FragmentCreateSession">
+
+    <TextView
+        android:id="@+id/textViewLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/poppinsbold"
+        android:gravity="center"
+        android:text="@string/add_session"
+
+        android:textColor="@color/purple_700"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:targetApi="jelly_bean" />
+
+    <EditText
+        android:id="@+id/editTextSessionDate"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/textViewLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="#11000000"
+        android:ems="10"
+        android:hint="@string/activityTitle"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/editTextSessionDuration"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/editTextSessionDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="#11000000"
+        android:ems="10"
+        android:hint="@string/activityDuration"
+        android:inputType="text" />
+
+
+    <Button
+        android:id="@+id/buttonCreateSession"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/editTextSessionDuration"
+        android:layout_centerHorizontal="true"
+        android:text="@string/register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+</RelativeLayout>

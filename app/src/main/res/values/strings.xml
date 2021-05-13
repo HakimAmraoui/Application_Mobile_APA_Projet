@@ -11,8 +11,8 @@
     <string name="female">Female</string>
     <string name="createActivity">Create an activity</string>
     <string name="activityTitle">Title</string>
-    <string name="activityDuration">Duration</string>
-    <string name="activityDescription">Description</string>
+    <string name="activityDuration">Duration (min)</string>
+    <string name="activityDescription" translatable="false">Description</string>
     <string name="create">Create</string>
     <string name="home">Home</string>
     <string name="calendar">Calendar</string>
