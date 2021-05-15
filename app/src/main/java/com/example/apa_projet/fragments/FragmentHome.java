@@ -15,7 +15,7 @@ import com.example.apa_projet.R;
 
 public class FragmentHome extends Fragment {
 
-    Button loginButton, registerButton, createSessionButton, createActivityButton;
+    Button loginButton, registerButton, createStructureButton, createSessionButton, createActivityButton;
     FragmentManager fm;
 
     public FragmentHome() {
@@ -50,9 +50,15 @@ public class FragmentHome extends Fragment {
             fragmentRegister.show(fm, "FragmentRegister");
         });
 
+        createStructureButton = view.findViewById(R.id.addStructureButton);
+        createStructureButton.setOnClickListener(v -> {
+            FragmentCreateStructure fragmentCreateStructure = FragmentCreateStructure.newInstance();
+            fragmentCreateStructure.show(fm, "FragmentCreateStructure");
+        });
+
         createSessionButton = view.findViewById(R.id.addSessionButton);
         createSessionButton.setOnClickListener(v -> {
-           FragmentCreateSession fragmentCreateSession = new FragmentCreateSession();
+           FragmentCreateSession fragmentCreateSession = FragmentCreateSession.newInstance();
            fragmentCreateSession.show(fm, "addSession");
         });
 

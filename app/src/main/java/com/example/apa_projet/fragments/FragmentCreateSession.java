@@ -16,6 +16,7 @@ import android.widget.ProgressBar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
+import androidx.fragment.app.FragmentManager;
 
 import com.example.apa_projet.R;
 
@@ -32,8 +33,8 @@ public class FragmentCreateSession extends DialogFragment {
     public FragmentCreateSession() {
     }
 
-    public static FragmentCreateActivity newInstance() {
-        FragmentCreateActivity fragment = new FragmentCreateActivity();
+    public static FragmentCreateSession newInstance() {
+        FragmentCreateSession fragment = new FragmentCreateSession();
         return fragment;
     }
 
@@ -51,7 +52,7 @@ public class FragmentCreateSession extends DialogFragment {
         View view = inflater.inflate(R.layout.fragment_create_session, container, false);
 
         dateEditText = view.findViewById(R.id.editTextSessionDate);
-        durationEditText = view.findViewById(R.id.editTextSessionDuration);
+        durationEditText = view.findViewById(R.id.editTextActivityDuration);
         createButton = view.findViewById(R.id.buttonCreateSession);
 
         final Calendar myCalendar = Calendar.getInstance();

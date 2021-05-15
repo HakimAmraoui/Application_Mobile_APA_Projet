@@ -17,10 +17,13 @@
     <string name="home">Accueil</string>
     <string name="calendar">Calendrier</string>
     <string name="search">Rechercher</string>
-    <string name="add_structure">Ajouter une structure</string>
-    <string name="add_session">Ajouter une session</string>
-    <string name="add_activity">Ajouter une activité</string>
+    <string name="addStructure">Ajouter une structure</string>
+    <string name="addSession">Ajouter une session</string>
+    <string name="addActivity">Ajouter une activité</string>
     <string name="patient">Patient</string>
     <string name="doctor">Docteur</string>
     <string name="collaborator">Collaborateur</string>
+    <string name="structureDiscipline">Disciplines de la structure</string>
+    <string name="structureName">Nom de la structure</string>
+    <string name="structurePathologies">Liste des pathologies</string>
 </resources>

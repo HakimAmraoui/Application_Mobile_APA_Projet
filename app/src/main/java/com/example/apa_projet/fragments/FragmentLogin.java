@@ -46,7 +46,7 @@ public class FragmentLogin extends DialogFragment {
         View view = inflater.inflate(R.layout.fragment_login, container, false);
 
         usernameEditText = view.findViewById(R.id.editTextUserName);
-        passwordEditText = view.findViewById(R.id.editTextPassword);
+        passwordEditText = view.findViewById(R.id.editTextStructureDiscipline);
         login = view.findViewById(R.id.buttonLogin);
         loading = view.findViewById(R.id.loading);
 

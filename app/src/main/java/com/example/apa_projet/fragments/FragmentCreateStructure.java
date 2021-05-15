@@ -15,21 +15,21 @@ import android.widget.ProgressBar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
+import androidx.fragment.app.FragmentManager;
 
 import com.example.apa_projet.R;
 
-public class FragmentRegister extends DialogFragment {
+public class FragmentCreateStructure extends DialogFragment {
 
-    EditText editTextUsername, editTextName, editTextPassword, editTextAge;
-    Button buttonRegister;
+    EditText editTextName, editTextDisciplines, editTextPathologies;
+    Button addButton;
     ProgressBar loading;
 
-    public FragmentRegister() {
+    public FragmentCreateStructure() {
     }
 
-
-    public static FragmentRegister newInstance() {
-        FragmentRegister fragment = new FragmentRegister();
+    public static FragmentCreateStructure newInstance() {
+        FragmentCreateStructure fragment = new FragmentCreateStructure();
         return fragment;
     }
 
@@ -42,12 +42,12 @@ public class FragmentRegister extends DialogFragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_register, container, false);
+        View view = inflater.inflate(R.layout.fragment_create_structure, container, false);
 
-        editTextName = view.findViewById(R.id.editTextName);
-        editTextUsername = view.findViewById(R.id.editTextUserName);
-        editTextPassword = view.findViewById(R.id.editTextStructureDiscipline);
-        buttonRegister = view.findViewById(R.id.buttonRegister);
+        editTextName = view.findViewById(R.id.editTextStructureName);
+        editTextDisciplines = view.findViewById(R.id.editTextStructureDiscipline);
+        editTextPathologies = view.findViewById(R.id.editTextStructurePathologies);
+        addButton = view.findViewById(R.id.addStructureButton);
         loading = view.findViewById(R.id.loading);
 
         TextWatcher textWatcher = new TextWatcher() {
@@ -58,11 +58,11 @@ public class FragmentRegister extends DialogFragment {
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 if (editTextName.getText().toString().isEmpty()
-                        || editTextUsername.getText().toString().isEmpty()
-                        || editTextPassword.getText().toString().isEmpty()) {
-                    buttonRegister.setEnabled(false);
+                        || editTextDisciplines.getText().toString().isEmpty()
+                        || editTextPathologies.getText().toString().isEmpty()) {
+                    addButton.setEnabled(false);
                 } else {
-                    buttonRegister.setEnabled(true);
+                    addButton.setEnabled(true);
                 }
             }
 
@@ -71,10 +71,10 @@ public class FragmentRegister extends DialogFragment {
             }
         };
         editTextName.addTextChangedListener(textWatcher);
-        editTextUsername.addTextChangedListener(textWatcher);
-        editTextPassword.addTextChangedListener(textWatcher);
+        editTextDisciplines.addTextChangedListener(textWatcher);
+        editTextPathologies.addTextChangedListener(textWatcher);
 
-        buttonRegister.setOnClickListener(v -> {
+        addButton.setOnClickListener(v -> {
             loading.setVisibility(View.VISIBLE);
             new Handler(Looper.getMainLooper()).postDelayed(() -> {
                 loading.setVisibility(View.GONE);
@@ -84,6 +84,6 @@ public class FragmentRegister extends DialogFragment {
         });
 
         return view;    }
-}
 
+}
 

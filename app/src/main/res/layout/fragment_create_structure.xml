@@ -3,18 +3,16 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".fragments.FragmentCreateSession">
+    android:layout_width="match_parent" android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/textViewLabel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="75dp"
         android:fontFamily="@font/poppinsbold"
         android:gravity="center"
-        android:text="@string/addSession"
+        android:text="@string/addStructure"
 
         android:textColor="@color/purple_700"
         android:textSize="30sp"
@@ -25,7 +23,7 @@
         tools:targetApi="jelly_bean" />
 
     <EditText
-        android:id="@+id/editTextSessionDate"
+        android:id="@+id/editTextStructureName"
         android:layout_width="200dp"
         android:layout_height="40dp"
         android:layout_below="@id/textViewLabel"
@@ -33,30 +31,40 @@
         android:layout_marginTop="50dp"
         android:background="#11000000"
         android:ems="10"
-        android:hint="@string/activityTitle"
-        android:inputType="date" />
+        android:hint="@string/structureName"
+        android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/editTextActivityDuration"
+        android:id="@+id/editTextStructureDiscipline"
         android:layout_width="200dp"
         android:layout_height="40dp"
-        android:layout_below="@id/editTextSessionDate"
+        android:layout_below="@id/editTextStructureName"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp"
         android:background="#11000000"
         android:ems="10"
-        android:hint="@string/activityDuration"
-        android:inputType="text" />
-
+        android:hint="@string/structureDiscipline"
+        android:inputType="textPassword" />
+    <EditText
+        android:id="@+id/editTextStructurePathologies"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/editTextStructureDiscipline"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="#11000000"
+        android:ems="10"
+        android:hint="@string/structurePathologies"
+        android:inputType="textPassword" />
 
     <Button
-        android:id="@+id/buttonCreateSession"
+        android:id="@+id/addStructureButton"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_marginBottom="30dp"
-        android:layout_below="@id/editTextActivityDuration"
+        android:layout_below="@id/editTextStructurePathologies"
         android:layout_centerHorizontal="true"
         android:text="@string/add"
         app:layout_constraintEnd_toEndOf="parent"
@@ -68,4 +76,5 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:visibility="gone" />
+
 </RelativeLayout>
