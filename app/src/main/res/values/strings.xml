@@ -27,6 +27,8 @@
     <string name="structureDiscipline">Structure Disciplines</string>
     <string name="structurePathologies">List of Pathologies</string>
     <string name="add">Add</string>
+    <string name="session_of">Session of</string>
+    <string name="activity">Activity</string>
 
     <string-array name="duration_array">
         <item>30 mins</item>
