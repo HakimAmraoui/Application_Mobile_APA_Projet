@@ -26,4 +26,7 @@
     <string name="structureDiscipline">Disciplines de la structure</string>
     <string name="structureName">Nom de la structure</string>
     <string name="structurePathologies">Liste des pathologies</string>
+    <string name="add">Ajouter</string>
+    <string name="session_of">Session de</string>
+    <string name="activity">Activité</string>
 </resources>

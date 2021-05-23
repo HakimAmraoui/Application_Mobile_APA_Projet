@@ -29,13 +29,29 @@
     <string name="add">Add</string>
     <string name="session_of">Session of</string>
     <string name="activity">Activity</string>
+    <string name="suggestCourses">Suggest activities to a patient</string>
+    <string name="suggest">Suggest</string>
+    <string name="selectPatient">Select a patient</string>
+    <string name="hours">Hours</string>
+    <string name="activity_title">Activity Title</string>
+    <string name="activity_duration_in_hours">Activity Duration</string>
+    <string name="years">Years</string>
+    <string name="patientName">Patient Name</string>
+    <string name="patientAge">Patient Age</string>
+    <string name="name">Name</string>
+    <string name="courseTitle">Course title</string>
+    <string name="courseDescription">Course description</string>
+    <string name="courseCategorie">Course Categorie</string>
+    <string name="selectActivities">Select Activities</string>
+    <string name="title">Title</string>
 
-    <string-array name="duration_array">
-        <item>30 mins</item>
-        <item>1 hr </item>
-        <item>1 hr 30 mins</item>
-        <item>2 hrs</item>
-        <item>2 hrs 30 mins</item>
-        <item>3 hrs</item>
-    </string-array>
+    <!--
+        <string-array name="duration_array">
+            <item>30 mins</item>
+            <item>1 hr </item>
+            <item>1 hr 30 mins</item>
+            <item>2 hrs</item>
+            <item>2 hrs 30 mins</item>
+            <item>3 hrs</item>
+        </string-array>-->
 </resources>

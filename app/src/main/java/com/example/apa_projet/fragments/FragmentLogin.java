@@ -70,12 +70,7 @@ public class FragmentLogin extends DialogFragment {
         passwordEditText.addTextChangedListener(textWatcher);
 
         login.setOnClickListener(v -> {
-            loading.setVisibility(View.VISIBLE);
-            new Handler(Looper.getMainLooper()).postDelayed(() -> {
-                loading.setVisibility(View.GONE);
-                // Do stuff
-                getDialog().dismiss();
-            }, 1000);
+
         });
 
         return view;    }
